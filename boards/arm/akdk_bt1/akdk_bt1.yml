@@ -5,9 +5,6 @@ arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
-ram: 256
-flash: 1024
-qualifiers: "nrf52840"
 supported:
   - adc
   - usb_device
