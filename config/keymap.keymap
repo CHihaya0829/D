@@ -1,52 +1,28 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-		layer_0 {
-			bindings = <
-				// --- 位置 0-11: QWERTY文字段(左6 + 右6) ---
-				&kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T
-				&kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT
+        layer_0 {
+            bindings = <
+&kp TAB         &kp Q         &kp W      &kp E     &kp R     &kp T                              &kp Y     &kp U      &kp I    &kp O     &kp P     &kp LBKT
+&kp LCTRL       &kp A         &kp S      &kp D     &kp F     &kp G      &kp DOWN_ARROW  &kp H   &kp H     &kp J      &kp K    &kp L     &kp SQT   &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X      &kp C     &kp V     &kp B      &kp LALT        &kp N   &kp N     &kp M      &kp DOT  &kp FSLH  &kp RBKT  &kp RSHFT
+&kp LWIN        &kp LEFT_ALT  &kp SPACE  &kp LALT  &kp LGUI  &kp ENTER                          &kp BSPC  &kp ENTER                     &kp RALT  &kp RGUI
+&kp ESC         &kp N1        &kp N2     &kp N3    &kp N4    &kp N5     &kp UP          &kp N7  &kp N6    &kp N7     &kp N8   &kp N9    &kp N0    &kp BSPC
+            >;
+        };
 
-				// --- 位置 12-25: ホームポジション段(左7 + 右7) ---
-				&kp LSHFT &kp A     &kp S     &kp D     &kp F     &kp G     &kp LGUI
-				&kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp ENTER
-
-				// --- 位置 26-39: 下段(左7 + 右7) ---
-				&kp LCTRL &kp Z     &kp X     &kp C     &kp V     &kp B     &kp LALT
-				&kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RBKT  &kp RSHFT
-
-				// --- 位置 40-49: 親指クラスター(左5 + 右5) ---
-				&kp SPACE &kp LSHFT &kp LCTRL &kp LALT  &kp LGUI
-				&kp ENTER &kp BSPC  &kp DEL   &kp RALT  &kp RGUI
-
-				// --- 位置 50-63: 数字段(左7 + 右7) ---
-				&kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6
-				&kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC
-			>;
-		};
-
-		layer_1 {
-			bindings = <
-				&none &none &none &none &none &none
-				&none &none &none &none &none &none
-
-				&none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none
-
-				&none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none
-
-				&none &none &none &none &none
-				&none &none &none &none &none
-
-				&none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none
-			>;
-		};
-	};
+        layer_1 {
+            bindings = <
+&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none  &none                &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+        };
+    };
 };
