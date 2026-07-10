@@ -2,60 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-[[-
-
-_: __: _;
-
-:
-
-
-    -
-
-_: _;
-
-:
-
-
-    0_@: 0__ {
-
-    compatible = "
-
-zmk,behavior-mod-morph {
-    ";
-};
-
-9
-
-
-
-};8_(: 8__
-
-    compatible = "
-
-zmk,behavior-mod-morph {
-    ";
-};
-
-6
-
-
-
-};5_%: 5__ {
-      compatible = "
-
-zmk,behavior-mod-morph {
-    ";
-};
-
-3
-
-
-
-};2_”: 2__ {
-      compatible = "zmk,behavior-mod-morph";
-    };
-    };
-
 keymap {
     compatible = "zmk,keymap";
 
