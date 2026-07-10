@@ -57,6 +57,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        UP_SCR: UP_SCR {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_SCR";
+            bindings = <&kp UP>, <&kp K_SCROLL_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        DOWN_SCR: DOWN_SCR {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_SCR";
+            bindings = <&kp DOWN>, <&kp K_SCROLL_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        Copy_Paset: Copy_Paset {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COPY_PASET";
+            bindings = <&kp K_COPY>, <&kp K_PASTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        back_next: back_next {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACK_NEXT";
+            bindings = <&kp K_BACK>, <&kp C_NEXT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -65,10 +101,10 @@
         layer_0 {
             bindings = <
 &kp TAB         &kp Q         &kp W      &kp E                &kp R      &kp T                                   &kp Y      &kp U      &kp I      &kp O     &kp P            &kp SEMICOLON
-&kp LCTRL       &kp A         &kp S      &kp D                &kp F      &kp G          &kp DOWN    &kp RIGHT    &kp H      &kp J      &kp K      &kp L     &kp LBKT         &kp RBKT
-&kp LEFT_SHIFT  &kp Z         &kp X      &kp C                &kp V      &kp B          &kp K_COPY  &kp K_PASTE  &kp N      &kp M      &kp COMMA  &kp DOT   &kp SLASH        &kp BACKSLASH
+&kp LCTRL       &kp A         &kp S      &kp D                &kp F      &kp G          &DOWN_SCR    &kp RIGHT   &kp H      &kp J      &kp K      &kp L     &kp LBKT         &kp RBKT
+&kp LEFT_SHIFT  &kp Z         &kp X      &kp C                &kp V      &kp B          &Copy_Paset  &back_next  &kp N      &kp M      &kp COMMA  &kp DOT   &kp SLASH        &kp BACKSLASH
 &kp LEFT_ALT    &kp LEFT_WIN  &kp SPACE  &kp INTERNATIONAL_4  &kp ENTER  &kp BACKSPACE                           &mkp LCLK  &mkp RCLK                       &kp RIGHT_SHIFT  &kp RCTRL
-&kp ESC         &kp N1        &N2_DQT    &kp N3               &kp N4     &kp N5         &kp UP      &kp LEFT     &H6_AMPS   &N7_SQT    &N8_LPAR   &N9_RPAR  &N0_AT           &kp MINUS
+&kp ESC         &kp N1        &N2_DQT    &kp N3               &kp N4     &kp N5         &UP_SCR      &kp LEFT    &H6_AMPS   &N7_SQT    &N8_LPAR   &N9_RPAR  &N0_AT           &kp MINUS
             >;
         };
 
