@@ -2,122 +2,54 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-/ {
-    1__1_!:2__2_”:3__3_#:4__4_$:5__5_%:6__6_&:7__7_’:8__8_(:9__9_):0__0_@:
+[[-
 
-    behaviors {
-        1_!: 1__ {
+_: __: _;
 
-        compatible = "zmk,behavior-mod-morph";
-        label = "0_@";
-        bindings = <&kp N0>, <&kp AT>;
+:
 
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
 
-    [[-_=:-
+    -
 
-    __ {
-        compatible = "zmk,behavior-mod-morph";
-        label = "-_=";
-        bindings = <&kp MINUS>, <&kp EQUAL>;
+_: _;
 
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+:
 
-    ..__\:
-
-    ___ {
-        compatible = "zmk,behavior-mod-morph";
-
-        label = "__\";
-
-        bindings = <&kp UNDER>, <&kp BACKSLASH>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    ,,
-
-    _: __ {
-        compatible = "zmk,behavior-mod-morph";
-        label = ",_|";
-        bindings = <&kp COMMA>, <&kp PIPE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    __\:
-
-    ___ { compatible = "zmk,behavior-mod-morph"; };
-
-    ]]:
-
-    _;
-
-    :
-
-    ___ {
-        compatible = "zmk,behavior-mod-morph";
-        label = ":_;";
-        bindings = <&kp COLON>, <&kp SEMI>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    -_=: -
-
-    __ { compatible = "zmk,behavior-mod-morph"; };
-
-    :
-
-    _;
-
-    :
-
-    ___ { compatible = "zmk,behavior-mod-morph"; };
 
     0_@: 0__ {
 
-    compatible = "zmk,behavior-mod-morph";
+    compatible = "
+
+zmk,behavior-mod-morph {
+    ";
 };
 
 9
 
-_: compatible = "zmk,behavior-mod-morph";
 
-};8_(: 8__ {
-      compatible = "
+
+};8_(: 8__
+
+    compatible = "
 
 zmk,behavior-mod-morph {
     ";
-    };7_’: 7__
-
-    compatible = "zmk,behavior-mod-morph";
 };
 
 6
 
-_: compatible = "zmk,behavior-mod-morph";
+
 
 };5_%: 5__ {
       compatible = "
 
 zmk,behavior-mod-morph {
     ";
-    };4_$: 4__
-
-    compatible = "zmk,behavior-mod-morph";
 };
 
 3
 
-_: compatible = "zmk,behavior-mod-morph";
+
 
 };2_”: 2__ {
       compatible = "zmk,behavior-mod-morph";
@@ -129,21 +61,21 @@ keymap {
 
     layer_0 {
         bindings = <
-&kp TAB         &kp Q         &kp W      &kp E                &kp R          &kp T                                                            &kp Y      &kp U      &kp I   &kp O   &kp P            &kp COLON
-&kp LCTRL       &kp A         &kp S      &kp D                &kp F          &kp G      &kp DOWN_ARROW  &kp LEFT                              &kp H      &kp J      &kp K   &kp L   &kp LBKT         &kp RBKT
-&kp LEFT_SHIFT  &kp Z         &kp X      &kp C                &kp V          &kp B      &kp K_UNDO      &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N      &kp M      &none   &none   &kp RSHFT        &kp RCTRL
-&kp LWIN        &kp LEFT_ALT  &kp SPACE  &kp INTERNATIONAL_4  &kp BACKSPACE  &kp ENTER                                                        &mkp LCLK  &mkp RCLK                  &kp K_SCROLL_UP  &kp K_SCROLL_DOWN
-&kp ESC         &kp N1        &kp N2     &kp N3               &kp N4         &kp N5     &kp UP          &kp RIGHT                             &kp N6     &kp N7     &kp N8  &kp N9  &kp N0           &kp MINUS
+&kp TAB    &kp Q     &kp W      &kp E                &kp R     &kp T                                                        &kp Y      &kp U      &kp I      &kp O    &kp P      &kp SEMI
+&kp LCTRL  &kp A     &kp S      &kp D                &kp F     &kp G      &kp DOWN    &kp RIGHT                             &kp H      &kp J      &kp K      &kp L    &kp LBKT   &kp RBKT
+&kp LSHFT  &kp Z     &kp X      &kp C                &kp V     &kp B      &kp K_BACK  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N      &kp M      &kp COMMA  &kp DOT  &kp RSHFT  &kp LCTRL
+&kp LGUI   &kp LALT  &kp SPACE  &kp INTERNATIONAL_4  &kp BSPC  &kp ENTER                                                    &mkp LCLK  &mkp RCLK                      &kp BSLH   &kp LESS_THAN
+&kp ESC    &kp N1    &kp N2     &kp N3               &kp N4    &kp N5     &kp UP      &kp LEFT                              &kp N6     &kp N7     &kp N8     &kp N9   &kp N0     &kp MINUS
         >;
     };
 
     layer_1 {
         bindings = <
-&none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none  &none                &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         >;
     };
 };
