@@ -3,47 +3,149 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    1__1_!:2__2_”:3__3_#:4__4_$:5__5_%:6__6_&:7__7_’:8__8_(:9__9_):0__0_@:
+
     behaviors {
-        Dot_Comma: Dot_Comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COMMA";
-            bindings = <&kp DOT>, <&kp COMMA>;
+        1_!: 1__ {
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        compatible = "zmk,behavior-mod-morph";
+        label = "0_@";
+        bindings = <&kp N0>, <&kp AT>;
 
-        BackSlash_Slash: BackSlash_Slash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSLASH_SLASH";
-            bindings = <&kp BACKSLASH>, <&kp SLASH>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+    [[-_=:-
 
-        layer_0 {
-            bindings = <
-&kp TAB         &kp Q         &kp W      &kp E                &kp R          &kp T                                                            &kp Y      &kp U      &kp I       &kp O             &kp P            &kp COLON
-&kp LCTRL       &kp A         &kp S      &kp D                &kp F          &kp G      &kp DOWN_ARROW  &kp LEFT                              &kp H      &kp J      &kp K       &kp L             &kp LBKT         &kp RBKT
-&kp LEFT_SHIFT  &kp Z         &kp X      &kp C                &kp V          &kp B      &kp K_UNDO      &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N      &kp M      &Dot_Comma  &BackSlash_Slash  &kp RSHFT        &kp RCTRL
-&kp LWIN        &kp LEFT_ALT  &kp SPACE  &kp INTERNATIONAL_4  &kp BACKSPACE  &kp ENTER                                                        &mkp LCLK  &mkp RCLK                                &kp K_SCROLL_UP  &kp K_SCROLL_DOWN
-&kp ESC         &kp N1        &kp N2     &kp N3               &kp N4         &kp N5     &kp UP          &kp RIGHT                             &kp N6     &kp N7     &kp N8      &kp N9            &kp N0           &kp MINUS
-            >;
-        };
+    __ {
+        compatible = "zmk,behavior-mod-morph";
+        label = "-_=";
+        bindings = <&kp MINUS>, <&kp EQUAL>;
 
-        layer_1 {
-            bindings = <
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    ..__\:
+
+    ___ {
+        compatible = "zmk,behavior-mod-morph";
+
+        label = "__\";
+
+        bindings = <&kp UNDER>, <&kp BACKSLASH>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    ,,
+
+    _: __ {
+        compatible = "zmk,behavior-mod-morph";
+        label = ",_|";
+        bindings = <&kp COMMA>, <&kp PIPE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    __\:
+
+    ___ { compatible = "zmk,behavior-mod-morph"; };
+
+    ]]:
+
+    _;
+
+    :
+
+    ___ {
+        compatible = "zmk,behavior-mod-morph";
+        label = ":_;";
+        bindings = <&kp COLON>, <&kp SEMI>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    -_=: -
+
+    __ { compatible = "zmk,behavior-mod-morph"; };
+
+    :
+
+    _;
+
+    :
+
+    ___ { compatible = "zmk,behavior-mod-morph"; };
+
+    0_@: 0__ {
+
+    compatible = "zmk,behavior-mod-morph";
+};
+
+9
+
+_: compatible = "zmk,behavior-mod-morph";
+
+};8_(: 8__ {
+      compatible = "
+
+zmk,behavior-mod-morph {
+    ";
+    };7_’: 7__
+
+    compatible = "zmk,behavior-mod-morph";
+};
+
+6
+
+_: compatible = "zmk,behavior-mod-morph";
+
+};5_%: 5__ {
+      compatible = "
+
+zmk,behavior-mod-morph {
+    ";
+    };4_$: 4__
+
+    compatible = "zmk,behavior-mod-morph";
+};
+
+3
+
+_: compatible = "zmk,behavior-mod-morph";
+
+};2_”: 2__ {
+      compatible = "zmk,behavior-mod-morph";
+    };
+    };
+
+keymap {
+    compatible = "zmk,keymap";
+
+    layer_0 {
+        bindings = <
+&kp TAB         &kp Q         &kp W      &kp E                &kp R          &kp T                                                            &kp Y      &kp U      &kp I   &kp O   &kp P            &kp COLON
+&kp LCTRL       &kp A         &kp S      &kp D                &kp F          &kp G      &kp DOWN_ARROW  &kp LEFT                              &kp H      &kp J      &kp K   &kp L   &kp LBKT         &kp RBKT
+&kp LEFT_SHIFT  &kp Z         &kp X      &kp C                &kp V          &kp B      &kp K_UNDO      &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp N      &kp M      &none   &none   &kp RSHFT        &kp RCTRL
+&kp LWIN        &kp LEFT_ALT  &kp SPACE  &kp INTERNATIONAL_4  &kp BACKSPACE  &kp ENTER                                                        &mkp LCLK  &mkp RCLK                  &kp K_SCROLL_UP  &kp K_SCROLL_DOWN
+&kp ESC         &kp N1        &kp N2     &kp N3               &kp N4         &kp N5     &kp UP          &kp RIGHT                             &kp N6     &kp N7     &kp N8  &kp N9  &kp N0           &kp MINUS
+        >;
+    };
+
+    layer_1 {
+        bindings = <
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none  &none                &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
     };
+};
+
 };
